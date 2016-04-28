@@ -1,4 +1,4 @@
-Semantic Versioning For Natural Language 0.1.0
+Semantic Versioning for Natural Language 0.1.1
 ==============================================
 
 Summary
