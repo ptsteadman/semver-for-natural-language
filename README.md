@@ -6,12 +6,12 @@ Summary
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
-1. MAJOR version when you make changes or additions that affect the meaning of
-   the abstract summary of the text,
-1. MINOR version when you make changes or additions that affect the meaning of
-   part of the text, but do not affect the abstract summary, and
-1. PATCH version when you make changes, additions, or corrections than do not
-   affect the meaning of text.
+1. MAJOR version when you make changes that affect the meaning of the abstract
+   summary of the text,
+1. MINOR version when you make changes that affect the meaning of part of the
+   text, but do not affect the abstract summary, and
+1. PATCH version when you make changes that do not have a significant effect on
+   the meaning of the text.
 
 Additional labels for pre-release and metadata are available as extensions to
 the MAJOR.MINOR.PATCH format.
@@ -24,16 +24,18 @@ there is no consistent system for versioning texts.  A textbook might have
 different editions, but when a book goes from "First Edition" to "Second
 Edition", there's no way to know if it was just a few typos that were corrected,
 or if the book was almost fully rewritten in order to reflect a paradigm shift
-in the industry.  Giving documents a single, flat version number can create
-unnecessary rigidity and uncertainty: if other writers have referenced an
-article without a version number, the author of the referenced article might be
-unwilling to make changes to that article.  
+in the field.  Single, flat version numbers can create unnecessary rigidity and
+uncertainty.  For example, if other writers have referenced an article without a
+version number, the author of the referenced article might be unwilling to make
+changes to that article, because people might end up referencing inconsistent
+versions of the text.
 
 In creative works, authors often feel that it's necessary to create a final,
 crystallized version of the text, even when input after an initial publication
 could improve the work.  A standardized semantic versioning system for natural
 language could help authors work collaboratively with texts as fluid, living
-documents.
+documents.  An author could specify that they are welcome to patch or minor
+level contributions, but are unwilling to chance the general meaning of their work.
 
 Semantic Versioning for Natural Language is a simple set of rules that dictate
 how version numbers are assigned and incremented.  For this system to work, you
@@ -46,9 +48,9 @@ your own writing, or contributions from others.
 
 Once you identify your public abstract, you communicate changes to it with
 specific increments to your version number.  Consider a version format of X.Y.Z
-(Major.Minor.Patch). Changes or additions not affecting the meaning of the text
-increment the patch version, changes that affect the meaning of the text but
-aren't significant enough to effect the public abstract increment the minor
+(Major.Minor.Patch). Changes that don't significantly affect the meaning of the
+text increment the patch version, changes that affect the meaning of the text
+but aren't significant enough to effect the public abstract increment the minor
 version, and changes that affect the overall meaning of the text and thus the
 public abstract increment the major version.
 
@@ -213,20 +215,10 @@ Why Use Semantic Versioning?
 This is not a new or revolutionary idea. In fact, you probably do something
 close to this already. The problem is that "close" isn't good enough. Without
 compliance to some sort of formal specification, version numbers are essentially
-useless for for scholarship, legal purposes, or collaboration. By giving a name
+useless for for scholarship, legal purposes, or collaboration.  By giving a name
 and clear definition to the above ideas, it becomes easy to communicate your
-intentions to the users of your writing. Once these intentions are clear,
+intentions to the users of your writing.  Once these intentions are clear,
 flexible (but not too flexible) specifications can finally be made.
-
-A simple example will demonstrate how Semantic Versioning can make dependency
-hell a thing of the past. Consider a library called "Firetruck." It requires a
-Semantically Versioned package named "Ladder." At the time that Firetruck is
-created, Ladder is at version 3.1.0. Since Firetruck uses some functionality
-that was first introduced in 3.1.0, you can safely specify the Ladder
-dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when
-Ladder version 3.1.1 and 3.2.0 become available, you can release them to your
-package management system and know that they will be compatible with existing
-dependent software.
 
 If all of this sounds desirable, all you need to do to start using Semantic
 Versioning is to declare that you are doing so and then follow the rules. Link
@@ -266,9 +258,9 @@ impact of your changes, and evaluate the cost/benefit ratio involved.
 ### Documenting the entire public abstract is too much work!
 
 It is your responsibility as a professional writer to properly document writing
-that is intended for consumed by others. Managing complexity is a hugely
-important part of what writers do. In the long run, Semantic Versioning, and the
-insistence on a well defined public abstract can keep everyone and everything
+that is intended to be read by others. Managing complexity is a hugely important
+part of what writers do. In the long run, Semantic Versioning, and the
+insistence on a well defined public abstract, can keep everyone and everything
 running smoothly.
 
 ### What do I do if I accidentally release a backwards incompatible change as a minor version?
