@@ -6,12 +6,15 @@ Summary
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
-1. MAJOR version when you make changes or additions that affect the meaning of the text as a whole,
-1. MINOR version when you make changes or additions that affect the meaning of an isolated part of the text, and
-1. PATCH version when you make changes, additions, or corrections than do not affect the meaning of text.
+1. MAJOR version when you make changes or additions that affect the meaning of
+   the text as a whole,
+1. MINOR version when you make changes or additions that affect the meaning of
+   an isolated part of the text, and
+1. PATCH version when you make changes, additions, or corrections than do not
+   affect the meaning of text.
 
-Additional labels for pre-release and build metadata are available as extensions
-to the MAJOR.MINOR.PATCH format.
+Additional labels for pre-release and metadata are available as extensions to
+the MAJOR.MINOR.PATCH format.
 
 Introduction
 ------------
@@ -68,15 +71,15 @@ Each element MUST increase numerically. For instance: 1.9.0 -> 1.10.0 -> 1.11.0.
 MUST NOT be modified. Any modifications MUST be released as a new version.
 
 1. Major version zero (0.y.z) is for initial development. Anything may change
-at any time. The public API should not be considered stable.
+at any time. The public meaning of the text should not be considered stable.
 
-1. Version 1.0.0 defines the public API. The way in which the version number
-is incremented after this release is dependent on this public API and how it
-changes.
+1. Version 1.0.0 defines the public meaning. The way in which the version number
+   is incremented after this release is dependent on this public meaning and how it
+   changes.
 
 1. Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards
-compatible bug fixes are introduced. A bug fix is defined as an internal
-change that fixes incorrect behavior.
+   compatible bug fixes are introduced. A bug fix is defined as an internal
+   change that fixes incorrect behavior.
 
 1. Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards
 compatible functionality is introduced to the public API. It MUST be
