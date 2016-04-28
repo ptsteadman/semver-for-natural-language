@@ -1,5 +1,5 @@
-Semantic Versioning For Natural Language and Art 0.0.1
-======================================================
+Semantic Versioning For Natural Language 0.0.1
+==============================================
 
 Summary
 -------
